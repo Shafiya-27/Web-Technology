@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBU Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #d82427;
+        }
+        .header-subtitle {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .school {
+            font-weight: bold;
+            font-size: 20px; /* Adjust size as needed */
+        }
+        .department {
+            font-weight: bold;
+            font-size: 16px; /* Adjust size as needed */
+            text-decoration: underline;
+            margin-top: 10px; /* Adjust this value to control the space */
+        }
+        .header-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-weight: bold;
+            padding: 0 15px;
+            font-size: 14px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        th {
+            background-color: #d9d9d9;
+            font-weight: bold;
+        }
+        .lunch-break, .break {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .room-info {
+            background-color: #e0e0e0;
+            text-align: left;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-title">
+        MOHAN BABU UNIVERSITY
+    </div>
+    <div class="header-subtitle">
+        Sree Sainath Nagar, A. Rangampet-517102<br><br>
+        <div class="school">SCHOOL OF COMPUTING</div>
+        <div class="department">DEPARTMENT OF DATA SCIENCE<br>
+        CLASS WORK TIME TABLE (2024-25)<br>
+        V Semester (Batch-2) (DS-4)</div>
+    </div>
+
+    <div class="header-info">
+        <div>Room No.: 704</div>
+        <div>W.E.F.: 15.07.2024</div>
+    </div>
+
+    <table>
+        <tr>
+            <th>DAY /HR</th>
+            <th>10:00 AM<br>TO<br>11:00 AM</th>
+            <th>11:00 AM<br>TO<br>12:00 PM</th>
+            <th rowspan="6">L<BR>U<BR>N<BR>C<BR>H<BR><BR>B<BR>R<BR>E<BR>A<BR>K</th>
+            <th>01:15 PM<br>TO<br>02:15 PM</th>
+            <th>02:15 PM<br>TO<br>03:15 PM</th>
+            <th rowspan="6">B<BR>R<BR>E<BR>A<BR>K</th>
+            <th>03:45 PM<br>TO<br>04:45 PM</th>
+            <th>04:45 PM<br>TO<br>05:45 PM</th>
+        </tr>
+        <tr>
+            <th>MON</th>
+            <td>EMSME<br>(MOOC)</td>
+            <td>CC<br>(706)</td>
+            <td colspan="2">ML LAB<br>Room No: 511</td>
+            <td>WT</td>
+            <td>DM<br>(MOOC)</td>
+        </tr>
+        <tr>
+            <th>TUE</th>
+            <td>ML<br>(705)</td>
+            <td>PA<br>(MOOC)</td>
+            <td colspan="2">DA LAB<br>Room No: 511</td>
+            <td>DAA</td>
+            <td>PA<br>(MOOC)</td>
+        </tr>
+        <tr>
+            <th>WED</th>
+            <td>CC<br>(706)</td>
+            <td>DM<br>(MOOC)</td>
+            <td colspan="2">CC LAB<br>Room No: 511</td>
+            <td>ML</td>
+            <td>LIB</td>
+        </tr>
+        <tr>
+            <th>THU</th>
+            <td>EMSME<br>(MOOC)</td>
+            <td>ML<br>(703)</td>
+            <td>DAA</td>
+            <td>WT</td>
+            <td>CC</td>
+            <td>PA<br>(MOOC)</td>
+        </tr>
+        <tr>
+            <th>FRI</th>
+            <td>PA<br>(MOOC)</td>
+            <td>WT</td>
+            <td colspan="2">WT LAB<br>Room No: 510</td>
+            <td>DAA</td>
+            <td>EMSME<br>(MOOC)</td>
+        </tr>
+    </table>
+
+    <table class="subject-info">
+        <tr>
+            <th>SUBJECT CODE</th>
+            <th>SUBJECT NAME</th>
+            <th>FACULTY NAME</th>
+        </tr>
+        <tr>
+            <td>22DS102002</td>
+            <td>Design and Analysis of Algorithms (DAA)</td>
+            <td>Ms. Chengamma Chitteti - DS</td>
+        </tr>
+        <tr>
+            <td>22IT104001</td>
+            <td>Web Technologies (WT)</td>
+            <td>Mr. P Yogendra Prasad - DS</td>
+        </tr>
+        <tr>
+            <td>22IT102003</td>
+            <td>Cloud Computing (CC)</td>
+            <td>Dr. Predeep Kumar Gupta - DS</td>
+        </tr>
+        <tr>
+            <td>22A1102003</td>
+            <td>Machine Learning (ML)</td>
+            <td>Ms. B. Ashreetha - ECE</td>
+        </tr>
+        <tr>
+            <td>22DS102002</td>
+            <td>Design and Analysis of Algorithms Lab (DAA LAB)</td>
+            <td>Ms. Chengamma Chitteti - DS Lab</td>
+        </tr>
+        <tr>
+            <td>231T104001</td>
+            <td>Web Technologies Lab (WT LAB)</td>
+            <td>Mr. P Yogendra Prasad - DS</td>
+        </tr>
+    </table>
+
+</body>
+</html>
